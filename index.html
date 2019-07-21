@@ -99,14 +99,18 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
+      <img srcset=" originals/firefoxlogo120.png 120,
+                        originals/firefoxlogo400.png 400"
+                        
+                sizes="(max-width: 320px) 120px,
+                      400px"
+                src="originals/firefoxlogo400.png"
+                alt="firefox classic logo">
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="400" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -118,16 +122,37 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img srcset="originals/firefoxadd">
+          <img srcset=" originals/firefoxlogo120.png 120,
+                        originals/firefoxlogo400.png 400,
+                        originals/firefoxlogo.png 1200"
+                        
+                sizes="(max-width: 480px) 120px,
+                      (max-width: 800px) 400px,
+                      1200px"
+                src="originals/firefoxlogo.png"
+                alt="firefox classic logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset=" originals/mozilla-dinosaur-head120.png 120,
+                        originals/mozilla-dinosaur-head400.png 400,
+                        originals/mozilla-dinosaur-head.png 1200"
+                        
+                sizes="(max-width: 480px) 120px,
+                      (max-width: 800px) 400px,
+                      1200px"
+                src="originals/mozilla-dinosaur-head.png"
+                alt="firefox classic logo">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="originals/firefoxaddon120.jpg 120,
+                        originals/firefoxaddon400.jpg 400"
+                sizes="(max-width: 480px) 120px,
+                        800px"
+                src="originals/firefoxaddon400.jpg"
+                alt="firefox logo printed over puzzle mossiac">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img srcset="originals/mdn.svg" alt="Mozilla Developer Network logo: dino silhouette over blue flag.">
         </a>
         <div class="clearfix"></div>
       </div>
