@@ -158,12 +158,11 @@
       </div>
 
       <div class="red-panda">
-        <img srcset="panda600.jpg 600w,
-                     panda1200.jpg 1200w"
-             sizes="(max-width: 600px) 500px,
-                     1200px"
-                src="originals/red-panda.jpg"
-                alt="red pand eating leafs in forest.">
+        <picture>
+          <source media="(max-width: 600px)" srcset="panda600.jpg">
+          <source media="(min-width: 600px)" srcset="panda1200.jpg">
+          <img src="originals/red-panda.jpg" alt="Red-panda eating leafs.">
+        </picture>
       </div>
 
     </main>
